@@ -1,0 +1,22 @@
+{
+  "name": "what-to-watch",
+  "version": "1.0.0",
+  "description": "Random Movie Selection",
+  "main": "index.js",
+  "scripts": {
+     "build": "browserify movie.js --standalone movie --outfile bundle.js",
+    "launch": "http-server . -a localhost -o"
+  },
+  "keywords": [
+    "movies"
+  ],
+  "author": "James Roland Cabresos <james.cabresos@gmail.com> (staticfunction.wordpress.com)",
+  "license": "ISC",
+  "dependencies": {
+    "random-movie": "~1.4.3"
+  },
+  "devDependencies": {
+    "browserify": "~11.2.0",
+    "http-server": "~0.8.5"
+  }
+}

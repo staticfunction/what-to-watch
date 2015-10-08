@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>What to Watch</title>
+	</head>
+	<body>
+		<h1>We Recommend</h1>
+		<img id="poster"/>
+		<script src="bundle.js"></script>
+		<script type="text/javascript">
+			movie.getMovie(function(data) {
+				document.getElementById('poster').src = data["Poster"];
+			})
+		</script>
+</html>
